@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "node run-demo.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/hcfw007/nw-vue-horizontal-tree#readme",
   "devDependencies": {
-    "vue": "^2.6.8"
+    "vue": "^2.6.8",
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1"
   }
 }

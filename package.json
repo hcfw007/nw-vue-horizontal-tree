@@ -1,0 +1,19 @@
+{
+  "name": "nw-vue-horizontal-tree",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hcfw007/nw-vue-horizontal-tree.git"
+  },
+  "author": "Nick Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcfw007/nw-vue-horizontal-tree/issues"
+  },
+  "homepage": "https://github.com/hcfw007/nw-vue-horizontal-tree#readme"
+}

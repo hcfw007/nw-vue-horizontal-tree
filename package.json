@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hcfw007/nw-vue-horizontal-tree/issues"
   },
-  "homepage": "https://github.com/hcfw007/nw-vue-horizontal-tree#readme"
+  "homepage": "https://github.com/hcfw007/nw-vue-horizontal-tree#readme",
+  "devDependencies": {
+    "vue": "^2.6.8"
+  }
 }

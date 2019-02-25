@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/hcfw007/nw-vue-horizontal-tree#readme",
   "devDependencies": {
+    "css-loader": "^2.1.1",
     "vue": "^2.6.8",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.9",
     "webpack": "^4.29.6",
     "webpack-dev-server": "^3.2.1"
   }

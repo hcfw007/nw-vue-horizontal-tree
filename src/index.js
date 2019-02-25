@@ -1,4 +1,4 @@
-import treeNode from './lib/treeNode'
+import treeNode from './lib/treeNode.vue'
 
 const VueHorizontalTree = {}
 

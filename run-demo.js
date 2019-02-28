@@ -1,8 +1,8 @@
-const Webpack = require('webpack')
+const webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
 const config = require('./demo/webpack.config.js')
 
-const compiler = Webpack(config)
+const compiler = webpack(config)
 const devServerOptions = Object.assign({}, config.devServer, {
     stats: {
       colors: true,

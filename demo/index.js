@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueHorizontalTree from '../src/index'
+import VueHorizontalTree from '../src/entry-global-component'
 
 Vue.use(VueHorizontalTree)
 

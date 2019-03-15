@@ -1,11 +1,11 @@
 {
   "name": "nw-vue-horizontal-tree",
   "version": "0.0.1",
-  "description": "",
+  "description": "yet another vue tree component",
   "main": "dist/tree.globals.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "demo": "node run-demo.js"
+    "demo": "node run-demo.js",
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",

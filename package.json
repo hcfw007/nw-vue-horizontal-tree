@@ -2,7 +2,7 @@
   "name": "nw-vue-horizontal-tree",
   "version": "0.0.1",
   "description": "yet another vue tree component",
-  "main": "dist/tree.globals.js",
+  "main": "dist/tree.global.js",
   "scripts": {
     "demo": "node run-demo.js",
     "build": "node build.js"

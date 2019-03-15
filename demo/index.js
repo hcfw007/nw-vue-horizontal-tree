@@ -19,7 +19,22 @@ var app = new Vue({
                 }],
             }, {
                 name: 'child2',
-                children: [],
+                children: [{
+                    name: 'child2-1',
+                    children: [{
+                        name: 'child2-1-1',
+                        children: [],
+                    }, {
+                        name: 'child2-2-2',
+                        children: [],
+                    }, {
+                        name: 'child2-2-3',
+                        children: [],
+                    }],
+                }, {
+                    name: 'child2-2',
+                    children: [],
+                }],
             }]
         },
     }

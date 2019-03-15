@@ -117,6 +117,19 @@ export default {
   position: relative;
 }
 
+
+[class*=level-] {
+  font-size: 14px;
+  color: #0083ef;
+  background-color: #ffffff;
+  border: solid 1px #0083ef;
+  border-radius: 20px;
+  height: 40px;
+  min-width: 100px;
+  text-align: center;
+  line-height: 40px;
+}
+
 .level-0 {
   font-size: 14px;
   color: #0083ef;
@@ -150,5 +163,6 @@ export default {
   text-align: center;
   line-height: 40px;
 }
+
 
 </style>

@@ -38,5 +38,32 @@ P.S. if you use String Templates or Single File Components(.Vue), you can use it
 <treeNode :treeData="treeData" />
 ```
 
+## Tree Data Structure
+```
+treeData = {
+    name: 'root',
+    children: [{
+        name: 'child1',
+        children: [{
+            name: 'child1-1',
+            children: [],
+        }, {
+            name: 'child1-2',
+            children: [],
+        }],
+    }, {
+        name: 'child2',
+        children: [],
+    }],
+}
+```
+Name: name of the node.
+Children: children of the node.
+
+## Plan
+This component was made for a peace of work. There are some more functions I have implemented. However those functions were added directly to the component violently, to finish the work fast. e.g allow \<input> or \<select> in the node, or Add and Remove button. I'll find a more elegant way to put that in ASAP.
+
+Feel free to start an issue.
+
 # Note
 Please make sure the width of the parent element is enough to contain the whole tree. Otherwise the flex layout will result in a mess.

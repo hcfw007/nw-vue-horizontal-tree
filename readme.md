@@ -37,3 +37,6 @@ P.S. if you use String Templates or Single File Components(.Vue), you can use it
 ```
 <treeNode :treeData="treeData" />
 ```
+
+# Note
+Please make sure the width of the parent element is enough to contain the whole tree. Otherwise the flex laoyout will result in a mess.

@@ -1,6 +1,6 @@
 {
   "name": "nw-vue-horizontal-tree",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "yet another vue tree component",
   "main": "dist/tree.global.js",
   "scripts": {

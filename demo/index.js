@@ -15,6 +15,7 @@ var app = new Vue({
                     children: [],
                 }, {
                     name: 'child1-2',
+                    type: 'input',
                     children: [],
                 }],
             }, {

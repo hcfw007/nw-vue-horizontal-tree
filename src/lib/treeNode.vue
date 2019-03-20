@@ -2,8 +2,11 @@
   <div style="display: inline-block;">
     <div class="node-container">
       <div class="node">
-        <div :class="['level-' + String(level), treeData.id]">
+        <div :class="['level-' + String(level), treeData.id]" class="node-normal" v-if="!treeData.type || treeData.type === 'normal'">
           <span>{{ treeData.name }}</span>
+        </div>
+        <div :class="['level-' + String(level), treeData.id]" class="node-input" v-if="treeData.type === 'input'">
+          <input type="text" v-model="treeData.value">
         </div>
       </div>
       <div class="line-1" :class="treeData.id" v-if="treeData.children && treeData.children.length > 0" />
@@ -28,6 +31,8 @@ export default {
         return {
           name: 'root',
           children: [],
+          type: 'normal',
+          value: undefined,
         }
       },
     },
@@ -164,5 +169,8 @@ export default {
   line-height: 40px;
 }
 
-
+input {
+  border: none;
+  margin: 0 5px;
+}
 </style>

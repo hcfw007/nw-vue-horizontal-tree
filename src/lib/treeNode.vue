@@ -8,6 +8,11 @@
         <div :class="['level-' + String(level), treeData.id]" class="node-input" v-if="treeData.type === 'input'">
           <input type="text" v-model="treeData.value">
         </div>
+        <div :class="['level-' + String(level), treeData.id]" class="node-select" v-if="treeData.type === 'select'">
+          <select name="" id="">
+            <option v-for="option in treeData.options" :value="option.value" v-bind:key="option.value">{{ option.label }}</option>
+          </select>
+        </div>
       </div>
       <div class="line-1" :class="treeData.id" v-if="treeData.children && treeData.children.length > 0" />
       <div class="child-nodes" v-if="treeData.children && treeData.children.length > 0">
@@ -169,7 +174,7 @@ export default {
   line-height: 40px;
 }
 
-input {
+input, select {
   border: none;
   margin: 0 5px;
 }

@@ -3,6 +3,19 @@ import VueHorizontalTree from '../src/entry-global-component'
 
 Vue.use(VueHorizontalTree)
 
+const options = [
+    {
+        value: 1,
+        label: 'option 1'
+    }, {
+        value: 2,
+        label: 'option 2'
+    }, {
+        value: 3,
+        label: 'option 3'
+    },
+]
+
 var app = new Vue({
     el: '#app',
     data: {
@@ -30,6 +43,8 @@ var app = new Vue({
                         children: [],
                     }, {
                         name: 'child2-2-3',
+                        type: 'select',
+                        options: options,
                         children: [],
                     }],
                 }, {

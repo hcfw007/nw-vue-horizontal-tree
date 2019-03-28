@@ -1,7 +1,7 @@
 <template>
   <div style="display: inline-block;">
     <div class="node-container">
-      <div class="node">
+      <div class="node" @click="passEvent('pass', {type: 'click'})">
         <div :class="['level-' + String(level), treeData.id]" class="node-normal" v-if="!treeData.type || treeData.type === 'normal'">
           <span>{{ treeData.name }}</span>
         </div>
@@ -56,13 +56,13 @@ export default {
     }
   },
   methods: {
-    passEvent: function(type, payload) {
+    passEvent: function(type, payload = {}) {
       if (!payload.target) {
-        payload.target = this
+        payload.target = this.treeData
       } else if (this.treeData.children.indexOf(payload.target) > -1) {
-        payload.parent = this
+        payload.parent = this.treeData
       }
-      this.$emit(type, payload)
+      this.$emit('pass', payload)
     },
   },
 }

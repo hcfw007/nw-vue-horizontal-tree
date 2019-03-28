@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="app">
-    <tree-Node :tree-Data="treeData" />
+    <tree-Node :tree-Data="treeData" @pass="handleNodeEvent($event)" />
 </div>
 <script src="./bundle.js"></script>
 </body>

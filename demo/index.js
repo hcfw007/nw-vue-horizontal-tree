@@ -53,5 +53,10 @@ var app = new Vue({
                 }],
             }]
         },
+    },
+    methods: {
+        handleNodeEvent: function(event) {
+            console.log(event)
+        },
     }
 })

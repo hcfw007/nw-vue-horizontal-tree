@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../dist/tree.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <tree-Node :tree-Data="treeData" @pass="handleNodeEvent($event)" />
+    </div>
+
+    <script>
+        const options = [
+            {
+                value: 1,
+                label: 'option 1'
+            }, {
+                value: 2,
+                label: 'option 2'
+            }, {
+                value: 3,
+                label: 'option 3'
+            },
+        ]
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                treeData: {
+                    name: 'root',
+                    children: [{
+                        name: 'child1',
+                        children: [{
+                            name: 'child1-1',
+                            children: [],
+                        }, {
+                            name: 'child1-2',
+                            type: 'input',
+                            children: [],
+                        }],
+                    }, {
+                        name: 'child2',
+                        children: [{
+                            name: 'child2-1',
+                            children: [{
+                                name: 'child2-1-1',
+                                children: [],
+                            }, {
+                                name: 'child2-2-2',
+                                children: [],
+                            }, {
+                                name: 'child2-2-3',
+                                type: 'select',
+                                options: options,
+                                children: [],
+                            }],
+                        }, {
+                            name: 'child2-2',
+                            children: [],
+                        }],
+                    }]
+                },
+            },
+            methods: {
+                handleNodeEvent: function(event) {
+                    console.log('event')
+                },
+            }
+        })
+    
+    </script>
+</body>
+</html>

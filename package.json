@@ -20,10 +20,16 @@
   "devDependencies": {
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
+    "cz-conventional-changelog": "^3.0.2",
     "vue": "^2.6.8",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.9",
     "webpack": "^4.29.6",
     "webpack-dev-server": "^3.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

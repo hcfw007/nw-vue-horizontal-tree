@@ -6,10 +6,10 @@
           <span>{{ treeData.name }}</span>
         </div>
         <div :class="['level-' + String(level), treeData.id]" class="node-input" v-if="treeData.type === 'input'">
-          <input type="text" v-model="treeData.value">
+          <input type="text" v-model="treeData.value" @change="passEvent('pass', {type: 'change', value: $event.target.value})">
         </div>
         <div :class="['level-' + String(level), treeData.id]" class="node-select" v-if="treeData.type === 'select'">
-          <select name="" id="">
+          <select name="" id="" @change="passEvent('pass', {type: 'change', value: $event.target.value})">
             <option v-for="option in treeData.options" :value="option.value" v-bind:key="option.value">{{ option.label }}</option>
           </select>
         </div>
